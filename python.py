@@ -23,7 +23,7 @@ print(woord)
 
 gebruikte_letter=""
 
-letter = input("type een letter ")
+letter = input("type een letter of type ? om het woord te raden: ")
 
 while True:
     if letter in woord:
@@ -32,11 +32,9 @@ while True:
     elif letter == "?":
         raad=input("Type de woord dan ")
         if raad == woord:
-            print("Ooh je hebt het woord geraden ")
+            print("Gefeliciteerd, je hebt het woord geraden!")
             break
         else:
             print("je hebt het woord fout geraden ")
             counter += 1
             check()
-
-
