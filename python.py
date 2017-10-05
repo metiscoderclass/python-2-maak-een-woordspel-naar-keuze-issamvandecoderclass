@@ -30,7 +30,7 @@ while True:
         gebruikte_letter+= letter
         print("Dit zijn je gebruikte letter:" + gebruikte_letter)
     elif letter == "?":
-        raad=input("Type de woord dan ")
+        raad=input("Type je woord: ")
         if raad == woord:
             print("Gefeliciteerd, je hebt het woord geraden!")
             break
