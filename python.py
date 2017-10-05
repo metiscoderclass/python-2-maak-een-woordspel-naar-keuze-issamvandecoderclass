@@ -15,18 +15,20 @@ def check():
         hangman.vier()
     elif counter == 5:
         hangman.vijf()
+        print("Je hebt verloren.")
 
 woord=random.choice(woorden)
 
 print(woord)
 
+gebruikte_letter=""
+
 letter = input("type een letter ")
-
-
 
 while True:
     if letter in woord:
-        print("Het zit in de geheime woord.")
+        gebruikte_letter+= letter
+        print("Dit zijn je gebruikte letter:" + gebruikte_letter)
     elif letter == "?":
         raad=input("Type de woord dan ")
         if raad == woord:
@@ -36,4 +38,5 @@ while True:
             print("je hebt het woord fout geraden ")
             counter += 1
             check()
+
 
