@@ -1,11 +1,11 @@
 def een():
-    print("=========")
+    print("---------")
 
 
 
 
 def twee():
-    print("=========")
+    print("---------")
     print("|")
     print("|")
     print("|")
@@ -14,28 +14,28 @@ def twee():
 
 
 def drie():
-    print("=========")
+    print("---------")
     print("|")
     print("|")
     print("|")
     print("|")
     print("|")
-    print("=========")
+    print("---------")
 
 def vier():
-    print("=========")
+    print("---------")
     print("|       | ")
     print("|       ")
     print("|")
     print("|")
-    print("=========")
+    print("---------")
 
 def vijf():
-    print("=========")
+    print("---------")
     print("|       | ")
     print("|      ( )")
     print("|      \|/ ")
     print("|       | ")
     print("|      / /")
     print("|")
-    print("=========")
+    print("---------")
