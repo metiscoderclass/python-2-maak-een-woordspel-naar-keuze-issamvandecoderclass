@@ -1,5 +1,9 @@
 import hangman
 import random
+print("Welkom bij:")
+print("/ __)  /__\  (  )  / __) (_  _)( ___)")
+print("( (_-. /(__)\  )(__( (_-..-_)(   )__) ")
+print("\___/(__)(__)(____)\___/\____) (____)  ")
 
 woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord"]
 counter = 0
