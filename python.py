@@ -1,11 +1,8 @@
 import hangman
 import random
 
-woorden = ["informatica", "linux", "python", "windows", ""]
+woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord"]
 counter = 0
-foute_letter = ""
-
-
 
 def check():
     if counter == 1:
@@ -18,9 +15,6 @@ def check():
         hangman.vier()
     elif counter == 5:
         hangman.vijf()
-
-def inwoord():
-
 
 woord=random.choice(woorden)
 
