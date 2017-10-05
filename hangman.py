@@ -25,7 +25,8 @@ def drie():
 def vier():
     print("---------")
     print("|       | ")
-    print("|       ")
+    print("|")
+    print("|")
     print("|")
     print("|")
     print("---------")
@@ -37,5 +38,4 @@ def vijf():
     print("|      \|/ ")
     print("|       | ")
     print("|      / /")
-    print("|")
     print("---------")
