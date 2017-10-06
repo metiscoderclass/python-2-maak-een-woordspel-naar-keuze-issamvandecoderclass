@@ -20,7 +20,6 @@ def check():
         hangman.vier()
     elif counter == 5:
         hangman.vijf()
-        print("Je hebt verloren.")
 
 woord=random.choice(woorden)
 
@@ -45,9 +44,16 @@ while True:
             counter += 1
             check()
     elif letter == "exit":
+        print ("Dit waren je gebruikte letters: " + gebruikte_letter)
         print ("Ik heb dat je hebt genoten, doei!")
+        break
+    elif counter == 5:
+        print("Je hebt verloren.")
         break
     else:
         print("Je letter is fout.")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
+        counter += 1
+        check()
+
