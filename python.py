@@ -1,5 +1,6 @@
 import hangman
 import random
+
 print("Welkom bij:")
 print("/ __)  /__\  (  )  / __) (_  _)( ___)")
 print("( (_-. /(__)\  )(__( (_-..-_)(   )__) ")
@@ -27,10 +28,11 @@ print(woord)
 
 gebruikte_letter=""
 
-letter = input("type een letter of type ? om het woord te raden. Of exit om te verlaten: ")
-
 while True:
+    letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
+    lengte = len(letter)
     if letter in woord:
+        print ("Dat is goed,")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
     elif letter == "?":
@@ -45,3 +47,7 @@ while True:
     elif letter == "exit":
         print ("Ik heb dat je hebt genoten, doei!")
         break
+    else:
+        print("Je letter is fout.")
+        gebruikte_letter = gebruikte_letter + "," + letter
+        print("Dit zijn je gebruikte letters:" + gebruikte_letter)
