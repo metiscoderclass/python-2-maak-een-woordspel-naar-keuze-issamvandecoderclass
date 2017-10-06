@@ -1,13 +1,14 @@
 import hangman
 import random
 
+counter = 0
+
 print("Welkom bij:")
 print("/ __)  /__\  (  )  / __) (_  _)( ___)")
 print("( (_-. /(__)\  )(__( (_-..-_)(   )__) ")
 print("\___/(__)(__)(____)\___/\____) (____)  ")
 
-woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord"]
-counter = 0
+woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord", "apple", "codecrackers", "robotica"]
 
 def check():
     if counter == 1:
@@ -56,4 +57,3 @@ while True:
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
         counter += 1
         check()
-
