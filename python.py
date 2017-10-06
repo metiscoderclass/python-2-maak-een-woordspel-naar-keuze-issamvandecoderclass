@@ -27,12 +27,12 @@ print(woord)
 
 gebruikte_letter=""
 
-letter = input("type een letter of type ? om het woord te raden: ")
+letter = input("type een letter of type ? om het woord te raden. Of exit om te verlaten: ")
 
 while True:
     if letter in woord:
-        gebruikte_letter+= letter
-        print("Dit zijn je gebruikte letter:" + gebruikte_letter)
+        gebruikte_letter = gebruikte_letter + "," + letter
+        print("Dit zijn je gebruikte letters:" + gebruikte_letter)
     elif letter == "?":
         raad=input("Type je woord: ")
         if raad == woord:
@@ -42,3 +42,6 @@ while True:
             print("je hebt het woord fout geraden ")
             counter += 1
             check()
+    elif letter == "exit":
+        print ("Ik heb dat je hebt genoten, doei!")
+        break
