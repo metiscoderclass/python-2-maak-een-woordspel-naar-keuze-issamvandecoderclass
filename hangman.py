@@ -24,7 +24,7 @@ def drie():
 
 def vier():
     print("---------")
-    print("|       | ")
+    print("|       |")
     print("|")
     print("|")
     print("|")
