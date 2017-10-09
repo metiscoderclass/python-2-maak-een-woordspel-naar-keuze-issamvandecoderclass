@@ -25,8 +25,6 @@ def check():
 woord=random.choice(woorden)
 gebruikte_letter=""
 
-print(woord)
-
 while True:
     letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
     lengte = len(letter)
