@@ -24,7 +24,6 @@ def check():
 
 woord=random.choice(woorden)
 gebruikte_letter=""
-
 while True:
     letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
     lengte = len(letter)
@@ -60,4 +59,5 @@ while True:
 
     if counter == 5:
         print("Je hebt verloren.")
+        print ("Het goede woord was: " + woord)
         break
