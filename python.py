@@ -28,7 +28,7 @@ while True:
     letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
     lengte = len(letter)
     if letter in woord:
-        print ("Dat is goed,")
+        print ("Dat is goed!")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
     elif letter in gebruikte_letter:
