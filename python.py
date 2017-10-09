@@ -58,6 +58,6 @@ while True:
         check()
 
     if counter == 5:
-        print("Je hebt verloren.")
+        print("Game over!")
         print ("Het goede woord was: " + woord)
         break
