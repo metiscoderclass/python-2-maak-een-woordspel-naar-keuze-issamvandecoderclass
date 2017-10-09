@@ -35,6 +35,8 @@ while True:
         print ("Dat is goed,")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
+    elif letter in gebruikte_letter:
+        print("Dat heb je al gezegd")
     elif letter == "?":
         raad=input("Type je woord: ")
         if raad == woord:
