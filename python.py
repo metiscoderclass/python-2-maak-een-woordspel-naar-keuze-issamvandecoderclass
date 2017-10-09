@@ -23,10 +23,9 @@ def check():
         hangman.vijf()
 
 woord=random.choice(woorden)
+gebruikte_letter=""
 
 print(woord)
-
-gebruikte_letter=""
 
 while True:
     letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
@@ -47,6 +46,8 @@ while True:
             print("je hebt het woord fout geraden ")
             counter += 1
             check()
+    elif lengte >= 2:
+        print ("Geen 2 letters graag")
     elif letter == "exit":
         print ("Dit waren je gebruikte letters: " + gebruikte_letter)
         print ("Ik heb dat je hebt genoten, doei!")
