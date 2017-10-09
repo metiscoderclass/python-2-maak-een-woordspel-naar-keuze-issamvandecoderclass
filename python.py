@@ -41,6 +41,7 @@ while True:
         raad=input("Type je woord: ")
         if raad == woord:
             print("Gefeliciteerd, je hebt het woord geraden!")
+            print ("Dit waren je gebruikte letters: " + gebruikte_letter)
             break
         else:
             print("je hebt het woord fout geraden ")
