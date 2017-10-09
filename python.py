@@ -49,14 +49,14 @@ while True:
         print ("Dit waren je gebruikte letters: " + gebruikte_letter)
         print ("Ik heb dat je hebt genoten, doei!")
         break
-
+    elif letter == "1" or letter == "2" or letter == "3" or letter == "4" or letter == "5" or letter == "6" or letter == "7" or or letter == "8" or letter == "9" or letter == "0":
+        print ("geen cijfers graag")
     else:
         print("Je letter is fout.")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
         counter += 1
         check()
-
     if counter == 5:
         print("Game over!")
         print ("Het goede woord was: " + woord)
