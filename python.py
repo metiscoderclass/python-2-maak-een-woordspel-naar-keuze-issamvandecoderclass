@@ -8,7 +8,7 @@ print("/ __)  /__\  (  )  / __) (_  _)( ___)")
 print("( (_-. /(__)\  )(__( (_-..-_)(   )__) ")
 print("\___/(__)(__)(____)\___/\____) (____)  ")
 
-woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord", "apple", "codecrackers", "robotica", "berichten", "github", "monitor", "melding"]
+woorden = ["informatica", "linux", "python", "windows", "telegram", "toetsenbord", "apple", "codecrackers", "robotica", "berichten", "github", "monitor", "melding", "psycholoog"]
 
 def check():
     if counter == 1:
