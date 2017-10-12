@@ -54,7 +54,7 @@ while True:
         break
     elif letter == "1" or letter == "2" or letter == "3" or letter == "4" or letter == "5" or letter == "6" or letter == "7" or letter == "8" or letter == "9" or letter == "0":
         print ("Geen cijfers graag")
-    elif letter == "!" or letter == "@" or letter == "#" or letter == "$" or letter == "%" or letter == "^" or letter == "&" or letter == "*" or letter == "(" or letter == ")":
+    elif letter == "!" or letter == "@" or letter == "#" or letter == "$" or letter == "%" or letter == "^" or letter == "&" or letter == "*" or letter == "(" or letter == ")" or letter == "~" or letter == "<" or letter == ">" or letter == "," or letter == "." or letter == "*" or letter == "/":
         print ("Geen tekens graag")
     else:
         print("Je letter is fout.")
