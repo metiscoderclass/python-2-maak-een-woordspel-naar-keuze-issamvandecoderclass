@@ -28,14 +28,14 @@ goeie_letters=""
 while True:
     letter = input("Type een letter, of type ? om het woord te raden. Type exit om Galgje te verlaten: ")
     lengte = len(letter)
-    if letter in woord:
+    if letter in gebruikte_letter:
+        print("Dat heb je al gezegd")
+    elif letter in woord:
         print ("Dat is goed!")
         gebruikte_letter = gebruikte_letter + "," + letter
         print("Dit zijn je gebruikte letters:" + gebruikte_letter)
         goeie_letters = goeie_letters + "," + letter
         print ("Dit zijn je goeie letters: " + goeie_letters)
-    elif letter in gebruikte_letter:
-        print("Dat heb je al gezegd")
     elif letter == "?":
         raad=input("Type je woord: ")
         if raad == woord:
@@ -47,7 +47,7 @@ while True:
             counter += 1
             check()
     elif lengte >= 2:
-        print ("Geen 2 letters graag")
+        print ("Geen meerdere letters graag")
     elif letter == "exit":
         print ("Dit waren je gebruikte letters: " + gebruikte_letter)
         print ("Ik heb dat je hebt genoten, doei!")
